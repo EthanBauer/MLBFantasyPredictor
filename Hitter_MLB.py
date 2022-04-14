@@ -28,5 +28,6 @@ for i in range(1, 339, 50):
         final_df = pd.concat([final_df, temp_df], ignore_index=True)
 # final_df['Scores'] = 0
 final_df
-print(final_df)
+
+#change line below's string to wherever you would like to store the file
 final_df.to_csv(r"/Users/ethanbauer/Desktop/mlb_stats.csv", index = True, sep=',', encoding='utf-8')
