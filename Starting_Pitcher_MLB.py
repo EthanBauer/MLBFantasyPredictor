@@ -55,6 +55,4 @@ for player in final_df1.values:
     whip.append(player[11])
 final_df['WHIP'] = whip
 
-
-# final_df1.sort_values('ERA', axis=0, ascending=True, inplace=True, na_position='first')
 final_df.to_csv(r"/Users/ethanbauer/Desktop/mlb_starting_pitcher_stats.csv", index = True, sep=',', encoding='utf-8')
